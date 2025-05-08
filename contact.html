@@ -1,0 +1,94 @@
+<!-- File: contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanly Odera | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">📝 Stanly Odera</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Information</h2>
+      
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:stanlyodera@gmail.com">stanlyodera@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+25411928658">+254 119 28658</a></p>
+      </div>
+      
+      <div class="social-links">
+        <p>Find me on social media:</p>
+        <a href="https://github.com/yourusername" class="social-icon" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername" class="social-icon" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/yourusername" class="social-icon" target="_blank" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://discord.com/users/yourusername" class="social-icon" target="_blank" title="Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" class="social-icon" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="skype:yourusername?chat" class="social-icon" target="_blank" title="Skype">
+          <i class="fab fa-skype"></i>
+        </a>
+      </div>
+
+      <h3>Contact Form</h3>
+      <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Stanly Odera. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Simple local alert submission (demo placeholder)
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Message submitted successfully!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+

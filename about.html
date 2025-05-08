@@ -1,0 +1,52 @@
+<!-- File: about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Stanly Odera</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">📝 Stanly Odera</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section" data-aos="fade-up">
+    <h1>About Stanly Odera</h1>
+    <p>
+      Hello! I'm Stanly Odera, a passionate web developer and designer based in Nairobi, Kenya.
+      My work revolves around building interactive, accessible, and beautiful web experiences.
+    </p>
+    <p>
+      I created this blog to document my learning, share insights, and help others in the tech community grow.
+      Expect posts on JavaScript, design thinking, life as a developer, and everything in between.
+    </p>
+    <p>
+      Outside of coding, I enjoy having serene nature walks, socialising with friends, and also farming. These activities keep me grounded and inspire creativity in my work.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Stanly Odera. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
+

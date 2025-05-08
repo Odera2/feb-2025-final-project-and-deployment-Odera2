@@ -1,0 +1,67 @@
+<!-- File: post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanly Odera | Blog Post</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="logo">📝 Stanly Odera</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post-container">
+      <h1 id="post-title">Designing with Purpose</h1>
+      <p class="post-meta">By Stanly Odera | Posted on May 8, 2025</p>
+
+      <div class="gallery">
+        <img src="assets/design.jpg" alt="Design" class="gallery-img" />
+        <img src="assets/colors.jpg" alt="Colors" class="gallery-img" />
+        <img src="assets/react.jpg" alt="React" class="gallery-img" />
+      </div>
+
+      <section class="post-content">
+        <p>
+          Purpose-driven design transforms digital experiences. In this post, I explore how intention, accessibility,
+          and emotional connection are the key to designing interfaces that people love.
+        </p>
+        <p>
+          From typography to color theory and layout, I’ll walk you through design principles that go beyond aesthetics—
+          focusing on empathy, clarity, and user satisfaction.
+        </p>
+      </section>
+    </article>
+
+    <section class="related-posts">
+      <h2>Related Posts</h2>
+      <div id="related-container" class="blog-posts"></div>
+    </section>
+  </main>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  
+
+  <footer>
+    <p>&copy; <span id="year"></span> Stanly Odera. All rights reserved.</p>
+  </footer>
+</body>
+</html>

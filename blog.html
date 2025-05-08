@@ -1,0 +1,55 @@
+<!-- File: blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanly Odera | Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">📝 Stanly Odera</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>Blog Posts</h2>
+      <input type="text" id="search-input" placeholder="Search blog posts...">
+    </section>
+
+    <section id="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="tech">Tech</button>
+      <button class="filter-btn" data-category="design">Design</button>
+      <button class="filter-btn" data-category="life">Life</button>
+    </section>
+
+    <section id="blog-container" class="blog-posts">
+      <!-- Blog posts will be injected here dynamically -->
+    </section>
+    <div id="pagination" class="pagination"></div>
+  </main>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Stanly Odera. All rights reserved.</p>
+  </footer>
+</body>
+</html>
